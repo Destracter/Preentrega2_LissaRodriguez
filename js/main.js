@@ -30,7 +30,7 @@ function mostrarProductos() {
   lista.innerHTML = "";
   for (let i = 0; i < productos.length; i++) {
     let li = document.createElement('li');
-    li.textContent = `Nombre: ${productos[i].nombre}, Precio $${productos[i].precio.toFixed(2)}`;
+    li.textContent = `Nombre: ${productos[i].nombre}, Precio ${productos[i].precio.toFixed(2)}`;
     lista.appendChild(li);
   }
 }
